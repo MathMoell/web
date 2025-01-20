@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to My GitHub Page</h1>
-    <p>This is a demo page with a custom background wallpaper.</p>
+    <h1>Tervist</h1>
+    <p>Olete sattunud minu lehele.</p>
 </body>
 </html>
