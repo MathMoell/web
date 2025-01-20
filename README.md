@@ -28,12 +28,14 @@
         }
         .image-container {
             display: flex;
-            justify-content: flex-end;
-            padding-top: 20px;
+            justify-content: flex-start;
+            align-items: center;
+            padding-bottom: 20px;
         }
         .image-container img {
-            width: 300px; /* or adjust the size as needed */
+            width: 150px; /* Adjust size if needed */
             height: auto;
+            margin-right: 20px;
         }
     </style>
 </head>
@@ -67,11 +69,14 @@
         <a href="https://mathmoell.github.io/html/h06.html" target="_blank">Link veebilehele H06</a>
     </p>
 
+    <!-- Title and image section -->
+    <div class="image-container">
+        <img src="https://github.com/MathMoell/html/raw/main/vapor.png" alt="Vapor image">
+        <h2>Mängi muusikat ↓</h2>
+    </div>
+    <p>Eden FM - "Stay"</p>
+
     <!-- YouTube audio player -->
-    <h2>Play YouTube Video Audio</h2>
-    <p>Click "Play" to start the audio.</p>
-    
-    <!-- YouTube player container -->
     <div id="player"></div>
 
     <!-- Controls for play, stop, and volume -->
@@ -80,11 +85,6 @@
         <button class="control-btn" id="stopButton">Stop</button>
         <input type="range" class="volume" id="volumeControl" min="0" max="100" value="100">
         <label for="volumeControl">Volume</label>
-    </div>
-
-    <!-- Image section added to the right -->
-    <div class="image-container">
-        <img src="https://github.com/MathMoell/html/raw/main/vapor.png" alt="Vapor image">
     </div>
 
     <script>
