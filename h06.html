@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <link rel="shortcut icon" href="favicon.ico" >
+    <meta name="author" content="Mathias Möll" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML,CSS,HTML5,CSS3" >
+    <title>H06</title>
+</head>
+<body>
+
+    <h1>Create forms</h1>
+    <form action="#" method="get">
+    <table>
+        <tr>
+            <td>Login:</td>
+            <td><input type="text" name="user" maxlength="6" placeholder="max pikkus 6" ></td>
+        </tr>
+        <tr>
+            <td>Course:</td>
+            <td><input type="text" name="course" maxlength="6" placeholder="max pikkus 3" ></td>
+        </tr>
+        <tr>
+            <td>Department nr:</td>
+            <td><input type="number" name="department" min="1" max="3" step="1"></td>
+        </tr>
+        <tr>
+            <td>PWD: *</td>
+            <td><input type="password" name="pw" required></td>
+        </tr>
+        <tr>
+            <td>Choose service:</td>
+            <td>
+                <select name="service">
+                    <option value="20">U Cheap 20$</option>
+                    <option value="40">Mid 40$</option>
+                    <option value="60">Rich boi 60$</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Role:</td>
+            <td>
+                <input type="radio" name="role" value="admin">Admin<br>
+                <input type="radio" name="role" value="mode">Moderator<br>
+                <input type="radio" name="role" value="user">User<br>
+            </td>
+        </tr>
+        <tr>
+            <td>Agreement:</td>
+            <td><input type="checkbox" name="agree"></td>
+        </tr>
+        <tr>
+            <td>Bio:</td>
+            <td><textarea name="bio" rows="10" cols="25"></textarea></td>
+        </tr>
+        <tr>
+            <td><input type="reset" value="Tühjenda väljad"></td>
+            <td><input type="submit" value="Saada"></td>
+        </tr>
+
+    </table>
+</form>
+  
+
+</body>
+</html>
