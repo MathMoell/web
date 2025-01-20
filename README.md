@@ -59,8 +59,8 @@
     </p>
 
     <!-- YouTube audio player -->
-    <h2>Eden FM Stay ↓</h2>
-    <p>Mängi muusikat</p>
+    <h2>Mängi muusikat ↓</h2>
+    <p>Eden FM - "Stay"</p>
     
     <!-- YouTube player container -->
     <div id="player"></div>
