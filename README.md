@@ -26,17 +26,6 @@
         .volume {
             width: 200px;
         }
-        .image-container {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            padding-bottom: 20px;
-        }
-        .image-container img {
-            width: 150px; /* Adjust size if needed */
-            height: auto;
-            margin-right: 20px;
-        }
     </style>
 </head>
 <body>
@@ -69,14 +58,11 @@
         <a href="https://mathmoell.github.io/html/h06.html" target="_blank">Link veebilehele H06</a>
     </p>
 
-    <!-- Title and image section -->
-    <div class="image-container">
-        <img src="https://github.com/MathMoell/html/raw/main/vapor.png" alt="Vapor image">
-        <h2>Mängi muusikat ↓</h2>
-    </div>
-    <p>Eden FM - "Stay"</p>
-
     <!-- YouTube audio player -->
+    <h2>Eden FM Stay ↓</h2>
+    <p>Mängi muusikat</p>
+    
+    <!-- YouTube player container -->
     <div id="player"></div>
 
     <!-- Controls for play, stop, and volume -->
