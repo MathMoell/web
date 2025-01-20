@@ -1,0 +1,24 @@
+body {
+  background-image: url('https://raw.githubusercontent.com/MathMoell/html/main/html.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 3em;
+  margin: 0.5em 0;
+}
+p {
+  font-size: 1.5em;
+}
