@@ -26,6 +26,15 @@
         .volume {
             width: 200px;
         }
+        .image-container {
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 20px;
+        }
+        .image-container img {
+            width: 300px; /* or adjust the size as needed */
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -59,8 +68,8 @@
     </p>
 
     <!-- YouTube audio player -->
-    <h2>Eden FM Stay ↓</h2>
-    <p>Mängi muusikat</p>
+    <h2>Play YouTube Video Audio</h2>
+    <p>Click "Play" to start the audio.</p>
     
     <!-- YouTube player container -->
     <div id="player"></div>
@@ -71,6 +80,11 @@
         <button class="control-btn" id="stopButton">Stop</button>
         <input type="range" class="volume" id="volumeControl" min="0" max="100" value="100">
         <label for="volumeControl">Volume</label>
+    </div>
+
+    <!-- Image section added to the right -->
+    <div class="image-container">
+        <img src="https://github.com/MathMoell/html/raw/main/vapor.png" alt="Vapor image">
     </div>
 
     <script>
