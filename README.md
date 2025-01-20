@@ -59,8 +59,8 @@
     </p>
 
     <!-- YouTube audio player -->
-    <h2>Play YouTube Video Audio</h2>
-    <p>Click "Play" to start the audio.</p>
+    <h2>Eden FM Stay ↓</h2>
+    <p>Mängi muusikat</p>
     
     <!-- YouTube player container -->
     <div id="player"></div>
