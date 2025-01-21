@@ -58,6 +58,11 @@
         <a href="https://mathmoell.github.io/html/h06.html" target="_blank">Link veebilehele H06</a>
     </p>
 
+    <!-- Adding the new link -->
+    <p>
+        <a href="https://mathmoell.github.io/html/iseseisev.html" target="_blank">Link veebilehele Iseseisev</a>
+    </p>
+
     <!-- YouTube audio player -->
     <h2>Mängi muusikat ↓</h2>
     <p>Eden FM - "Stay"</p>
