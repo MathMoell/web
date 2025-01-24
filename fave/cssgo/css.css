@@ -8,7 +8,7 @@ body {
 
 header {
     background: url('crusader.jpg') no-repeat center center/cover;
-    height: 80vh;  /* kõrgus on endiselt määratud */
+    height: 80vh;  /* muudame kõrguse madalamaks */
     color: white;
     text-align: center;
     display: flex;
@@ -32,9 +32,9 @@ header .button {
     margin-top: 20px;
 }
 
-/* Väiksem pilt */
+/* Väiksem crusader.jpg */
 header {
-    background-size: 50% auto;  /* Muudame pildi suuruse 50%-le */
+    background-size: 30% auto;  /* muudame pildi suuruse 30%-le */
 }
 
 nav {
@@ -81,6 +81,12 @@ main a {
 
 main a:hover {
     text-decoration: underline;
+}
+
+/* Väiksem pilt knee.jpg */
+.image-wrapper img {
+    max-width: 200px;  /* Muudame pildi suuruse väiksemaks */
+    height: auto;
 }
 
 .image-placeholder {
