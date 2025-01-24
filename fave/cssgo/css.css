@@ -67,7 +67,7 @@ main a:hover {
 .image-wrapper {
     width: 100%;      
     max-width: 50px; 
-    height: auto;     
+    height: 50px;     
     margin: 20px auto;
 }
 
