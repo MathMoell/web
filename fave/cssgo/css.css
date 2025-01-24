@@ -7,34 +7,15 @@ body {
 }
 
 header {
-    background: url('crusader.jpg') no-repeat center center/cover;
-    height: 80vh;  /* muudame kõrguse madalamaks */
-    color: white;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;  /* nihutame sisu ülespoole */
-    align-items: center;
-    padding-top: 10vh;  /* annab pildi kõrgusele lisa kõrguse */
 }
 
 header h1 {
     margin: 0;
     font-size: 24px;
-    margin-bottom: 10px;
-}
-
-header p {
-    margin: 5px 0 20px 0;
-}
-
-header .button {
-    margin-top: 20px;
-}
-
-/* Väiksem crusader.jpg */
-header {
-    background-size: 30% auto;  /* muudame pildi suuruse 30%-le */
 }
 
 nav {
@@ -83,12 +64,6 @@ main a:hover {
     text-decoration: underline;
 }
 
-/* Väiksem pilt knee.jpg */
-.image-wrapper img {
-    max-width: 200px;  /* Muudame pildi suuruse väiksemaks */
-    height: auto;
-}
-
 .image-placeholder {
     width: 100%;
     max-width: 704px;
@@ -118,4 +93,7 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
     font-size: 14px;
+    position: fixed;  /* Liikuv footer */
+    bottom: 0;        /* Asetab footer põhja */
+    width: 100%;      /* Tagab, et footer ulatub üle kogu ekraani laiuselt */
 }
