@@ -7,15 +7,34 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
+    background: url('crusader.jpg') no-repeat center center/cover;
+    height: 80vh;  /* kõrgus on endiselt määratud */
+    color: white;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  /* nihutame sisu ülespoole */
+    align-items: center;
+    padding-top: 10vh;  /* annab pildi kõrgusele lisa kõrguse */
 }
 
 header h1 {
     margin: 0;
     font-size: 24px;
+    margin-bottom: 10px;
+}
+
+header p {
+    margin: 5px 0 20px 0;
+}
+
+header .button {
+    margin-top: 20px;
+}
+
+/* Väiksem pilt */
+header {
+    background-size: 50% auto;  /* Muudame pildi suuruse 50%-le */
 }
 
 nav {
