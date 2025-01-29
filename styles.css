@@ -15,10 +15,48 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 h1 {
   font-size: 3em;
   margin: 0.5em 0;
 }
+
 p {
   font-size: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.control-btn {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.control-btn:hover {
+  background-color: #0056b3;
+}
+
+.volume {
+  width: 200px;
+}
+
+.new-links {
+  margin-top: 20px;
 }

@@ -4,64 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My GitHub Page</title>
-    <!-- Link to the CSS file -->
+    <!-- Link to the external CSS file -->
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
-        }
-        #player {
-            width: 560px;
-            height: 315px;
-            display: none;
-        }
-        .controls {
-            margin-top: 20px;
-        }
-        .control-btn {
-            margin: 5px;
-        }
-        .volume {
-            width: 200px;
-        }
-    </style>
 </head>
 <body>
     <h1>Tervist</h1>
     <p>Olete sattunud minu lehele.</p>
 
     <!-- Original Links Section -->
-    <p>
-        <a href="https://github.com/MathMoell/html/blob/main/h01.html" target="_blank">Link koodiga: H01</a>
-    </p>
-    <p>
-        <a href="https://github.com/MathMoell/html/blob/main/h02.html" target="_blank">Link koodiga: H02</a>
-    </p>
-    <p>
-        <a href="https://mathmoell.github.io/html/h03.html" target="_blank">Link veebilehele H03</a>
-    </p>
-    <p>
-        <a href="https://mathmoell.github.io/html/h04.html" target="_blank">Link veebilehele H04</a>
-    </p>
-    <p>
-        <a href="https://mathmoell.github.io/html/teenused.html" target="_blank">Link veebilehele Teenused</a>
-    </p>
-    <p>
-        <a href="https://mathmoell.github.io/html/kontakt.html" target="_blank">Link veebilehele Kontakt</a>
-    </p>
-    <p>
-        <a href="https://mathmoell.github.io/html/h05.html" target="_blank">Link veebilehele H05</a>
-    </p>
-    <p>
-        <a href="https://mathmoell.github.io/html/h06.html" target="_blank">Link veebilehele H06</a>
-    </p>
+    <p><a href="https://github.com/MathMoell/html/blob/main/h01.html" target="_blank">Link koodiga: H01</a></p>
+    <p><a href="https://github.com/MathMoell/html/blob/main/h02.html" target="_blank">Link koodiga: H02</a></p>
+    <p><a href="https://mathmoell.github.io/html/h03.html" target="_blank">Link veebilehele H03</a></p>
+    <p><a href="https://mathmoell.github.io/html/h04.html" target="_blank">Link veebilehele H04</a></p>
+    <p><a href="https://mathmoell.github.io/html/teenused.html" target="_blank">Link veebilehele Teenused</a></p>
+    <p><a href="https://mathmoell.github.io/html/kontakt.html" target="_blank">Link veebilehele Kontakt</a></p>
+    <p><a href="https://mathmoell.github.io/html/h05.html" target="_blank">Link veebilehele H05</a></p>
+    <p><a href="https://mathmoell.github.io/html/h06.html" target="_blank">Link veebilehele H06</a></p>
+    <p><a href="https://mathmoell.github.io/html/iseseisev/iseseisev.html" target="_blank">Link veebilehele Iseseisev</a></p>
 
-    <!-- Adding the new link -->
-    <p>
-        <a href="https://mathmoell.github.io/html/iseseisev.html" target="_blank">Link veebilehele Iseseisev</a>
-    </p>
+    <!-- New Links: Ekool and Tahvel -->
+    <div class="new-links">
+        <p><a href="https://www.ekool.ee" target="_blank">Ekool.edu.ee</a></p>
+        <p><a href="https://www.tahvel.edu.ee" target="_blank">Tahvel.edu.ee</a></p>
+    </div>
 
     <!-- YouTube audio player -->
     <h2>Mängi muusikat ↓</h2>
@@ -82,10 +47,9 @@
         let player;
         let isPlaying = false;
 
-        // Create the YouTube player using the Iframe API
         function onYouTubeIframeAPIReady() {
             player = new YT.Player('player', {
-                videoId: 'JPbvDEWibi0', // Replace with the YouTube video ID
+                videoId: 'JPbvDEWibi0',
                 events: {
                     'onReady': onPlayerReady,
                     'onStateChange': onPlayerStateChange
@@ -94,7 +58,6 @@
         }
 
         function onPlayerReady(event) {
-            // Set the initial volume from the slider
             const volumeSlider = document.getElementById('volumeControl');
             player.setVolume(volumeSlider.value);
         }
@@ -106,7 +69,6 @@
             }
         }
 
-        // Play the video
         document.getElementById('playButton').addEventListener('click', () => {
             if (!isPlaying) {
                 player.playVideo();
@@ -119,19 +81,16 @@
             }
         });
 
-        // Stop the video
         document.getElementById('stopButton').addEventListener('click', () => {
             player.stopVideo();
             isPlaying = false;
             document.getElementById('playButton').textContent = "Play";
         });
 
-        // Adjust the volume
         document.getElementById('volumeControl').addEventListener('input', (e) => {
             player.setVolume(e.target.value);
         });
 
-        // Load the YouTube API
         (function loadYouTubeAPI() {
             const script = document.createElement('script');
             script.src = "https://www.youtube.com/iframe_api";
