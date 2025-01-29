@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.header {
+    padding: 20px;
+}
+nav {
+    margin: 10px 0;
+}
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.posts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.post {
+    width: 300px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.post img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.socials img {
+    width: 32px;
+    height: 32px;
+    margin: 5px;
+}
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: #f4f4f4;
+}
