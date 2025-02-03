@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="et">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Harjutus 05</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+      .jumbo {
+        background-image: url('vapo1.jpg');
+        background-size: cover;
+        background-position: center;
+        color: black;
+        text-align: center;
+      }
+      .card-img-top {
+        width: 100%;
+        height: 15vw;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i class="bi bi-rocket-takeoff-fill"></i> Moell</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Avaleht</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">pood</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">info</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Kontakt
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Tel: +372 555 5555</a></li>
+                  <li><a class="dropdown-item" href="#">Email: test@test.com</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Support: never</a></li>
+                </ul>
+              </li>
+            </ul>
+            <button class="btn btn-success mr-auto" type="button">Log in</button>
+          </div>
+        </div>
+      </nav>
+      <div class="p-5 mb-4 bg-body-tertiary jumbo">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 text-center">Jumbotron</h1>
+          <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, sint assumenda quis error enim dolore, aliquid voluptas eius atque magni blanditiis nobis molestiae fuga nulla voluptate cum dicta doloribus unde?</p>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="4chan.jfif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">4chan</h5>
+              <span class="badge text-bg-primary">Lorem</span>
+              <span class="badge text-bg-danger">Impsum</span>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique explicabo repudiandae at eos incidunt omnis sapiente laboriosam expedita! Reprehenderit magnam odio delectus officiis repellendus! Unde aspernatur molestias nisi atque sequi?</p>
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-twitter"></i>
+              <i class="bi bi-apple"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="mcs.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Minecraft</h5>
+              <span class="badge text-bg-primary">Lorem</span>
+              <span class="badge text-bg-danger">Impsum</span>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, corporis doloribus quia suscipit saepe quis voluptate. Aliquam minima cumque commodi nihil voluptatem harum vero illum odit repudiandae soluta, aut quas!</p>
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-twitter"></i>
+              <i class="bi bi-apple"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <iframe width="100%" height="275" src="https://www.youtube.com/embed/tjetD2pFK4A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="card-img-top" allowfullscreen></iframe>
+            <div class="card-body">
+              <h5 class="card-title">Green</h5>
+              <span class="badge text-bg-warning">Vaporwave</span>
+              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, molestias. Commodi, nulla placeat? Quibusdam similique, velit obcaecati consectetur, hic voluptatibus dicta sit, nobis quam natus molestias iure. Molestias, animi laudantium.</p>
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-twitter"></i>
+              <i class="bi bi-apple"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
