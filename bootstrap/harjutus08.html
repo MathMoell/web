@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harjutus 08</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="container">
+    <form class="needs-validation" novalidate>
+        <div class="row">
+            <div class="col-sm-6 mb-3">
+                <label for="eesNimi" class="form-label">Nimi:</label>
+                <input type="text" class="form-control" id="eesNimi" name="eesNimi" required>
+                <div class="invalid-feedback">Palun täida!</div>
+                <div class="valid-feedback">Korras</div>
+            </div>
+        
+            <div class="col-sm-6 mb-3">
+                <label for="pereNimi" class="form-label">perekonna nimi:</label>
+                <input type="text" class="form-control" id="pereNimi" name="pereNimi" required>
+                <div class="invalid-feedback">Palun täida!</div>
+                <div class="valid-feedback">Korras</div>
+            </div>
+        
+            <div class="col-sm-6 mb-3">
+                <label for="email" class="form-label">email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+                <div class="invalid-feedback">Palun täida!</div>
+                <div class="valid-feedback">Korras</div>
+            </div>
+        
+            <div class="col-sm-6 mb-3">
+                <label for="teloNr" class="form-label">tel:</label>
+                <input type="tel" class="form-control" id="teloNr" name="teloNr" required>
+                <div class="invalid-feedback">Palun täida!</div>
+                <div class="valid-feedback">Korras</div>
+            </div>
+        
+            <div class="mb-3">
+                <label for="kirjeldus" class="form-label">kirjeldus:</label>
+                <textarea class="form-control" id="kirjeldus" name="kirjeldus" rows="4" required></textarea>
+                <div class="invalid-feedback">Palun täida!</div>
+                <div class="valid-feedback">Korras</div>
+            </div>
+            <div class="col-sm-6 mb-3">
+                <input class="form-check-input" type="checkbox" id="Checkbox" required/>
+                <label class="form-check-label" for="Checkbox">Olen tutvunud ja nõus <a class="text-decoration-none" href="#">privaatsustingimustega</a></label>
+                <div class="invalid-feedback">Palun täida!</div>
+                <div class="valid-feedback">Korras</div>
+            </div>
+        
+            <button type="submit" class="btn btn-primary">Register</button>
+        </div>
+    </form>
+</div>
+
+<script>
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        var forms = document.getElementsByClassName('needs-validation');
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
