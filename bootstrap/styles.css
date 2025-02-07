@@ -322,3 +322,75 @@ body {
     font-size: 0.8rem;
     color: var(--text-secondary);
 }
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-grid, .testimonial-cards, .pricing-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .services-grid, .testimonial-cards, .pricing-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .price-table th, .price-table td {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .contact-form .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .cta-button, .buy-button, .download-button {
+        width: 100%;
+        padding: 1rem;
+    }
+}
