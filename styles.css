@@ -113,6 +113,7 @@ body {
     gap: 2rem;
     padding: 4rem 2rem;
     background-color: var(--dark-bg);
+    margin-top: 50px; 
 }
 
 .feature-card {
@@ -559,8 +560,4 @@ body {
     transform: rotate(-45deg);
     position: relative;
     top: -8px;
-}
-.hero-content {
-    padding-top: 0; 
-    margin-top: -20px; 
 }
