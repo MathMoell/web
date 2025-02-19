@@ -116,9 +116,9 @@ body {
     border-radius: 4px;
     font-size: 1.1rem;
     cursor: pointer;
-    margin-top: -12px; /* Moves the button higher */
+    margin-top: -11px; /* Moves the button higher */
     position: relative;
-    top: -11px; /* Extra push if needed */
+    top: -10px; /* Extra push if needed */
 }
 
 
