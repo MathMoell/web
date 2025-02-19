@@ -66,18 +66,6 @@ body {
     position: relative;
 }
 
-.hero {
-    background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba');
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem; /* Reduced padding to move content higher */
-    position: relative;
-}
-
 .hero::before {
     content: '';
     position: absolute;
@@ -105,7 +93,7 @@ body {
 
 .hero h1 {
     font-size: 3.5rem;
-    margin-bottom: 1rem; /* Reduced margin to move the button up */
+    margin-bottom: 2rem;
 }
 
 .cta-button {
@@ -116,11 +104,7 @@ body {
     border-radius: 4px;
     font-size: 1.1rem;
     cursor: pointer;
-    margin-top: -11px; /* Moves the button higher */
-    position: relative;
-    top: -10px; /* Extra push if needed */
 }
-
 
 
 .features-grid {
@@ -129,6 +113,7 @@ body {
     gap: 2rem;
     padding: 4rem 2rem;
     background-color: var(--dark-bg);
+    margin-top: 50px; 
 }
 
 .feature-card {
@@ -575,25 +560,4 @@ body {
     transform: rotate(-45deg);
     position: relative;
     top: -8px;
-}
-
-.cta-button:hover, 
-.buy-button:hover, 
-.download-button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-
-.nav-links a:hover {
-    color: var(--primary-color);
-}
-
-
-.feature-card:hover, 
-.service-card:hover, 
-.testimonial-card:hover {
-    transform: translateY(-5px);
-    transition: transform 0.3s ease;
 }
