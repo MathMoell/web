@@ -560,3 +560,24 @@ body {
     position: relative;
     top: -8px;
 }
+
+.cta-button:hover, 
+.buy-button:hover, 
+.download-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+
+.feature-card:hover, 
+.service-card:hover, 
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
